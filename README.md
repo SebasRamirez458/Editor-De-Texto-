@@ -60,3 +60,18 @@ permite al usuario exportar el contenido actual del editor de texto como un arch
 ## Manual Tecnico
 Una vez compilada y teniendo la aplicacion abierta podemos ver un menu en la parte superior izquierda el cual se despliega y podermos ver las opciones de manejo de archivos como "guardar como" el cual permite guardar el documento que el usuario edito como (TXT,ODT,HTML,PDF) al igual que las opciones de abrir, guardar cambios, Imprimir, eliminar y cerrar, todas las anteriores siendo funciones relacionadas con el manejo de el archivo del usuario.
 En el centro de la aplicacion tenemos un cuadro de texto en el cual el usuario podra ingresar  el texto de desee teniendo las opciones de edicion en los botones superiores al cuadro de texto los cuales son: Negrilla, Cursiva, Tachado, Color de Fondo, subrrayado, Color, tamaño, fuente, alinear centro, alinear izquierda y alinear derecha, todas estas funciones o botones de la aplicacion son las que permiten la edicion del texto para aplicar dicha edicion se tiene que seleccionar con el cursor el fragmento de texto al cual se le va a aplicar el cambio o en caso de que quiera que el cambio se aplique para texto posterior solo es necesario dar click en el respectivo boton que desee
+
+# Hecho Por
+UNIVERSIDAD TECNOLOGICA DE PEREIRA
+Ingenieria en Sistemas y Computacion
+Facultad de Ingenierias
+Programacion II
+ing(c):Sebastian Ramirez Valencia 
+ing(c):Andres Camilo Ulloa
+
+# Contacto
+correo: sebastian.ramirez5@utp.edu.co
+correo: andres.ulloa@utp.Edu.co
+
+
+
