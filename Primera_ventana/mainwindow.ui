@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="8">
+     <widget class="QPushButton" name="Izquierda">
+      <property name="text">
+       <string>Alinear izquierda</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QFontComboBox" name="fontComboBox"/>
+    </item>
+    <item row="0" column="9">
+     <widget class="QPushButton" name="Derecha">
+      <property name="text">
+       <string>Alinear Derecha</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="7">
+     <widget class="QLabel" name="archivo">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QPushButton" name="Subrrayada">
+      <property name="text">
+       <string>Subrrayada</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Negrita">
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Negrita</string>
+      </property>
+      <property name="icon">
+       <iconset theme="format-text-bold"/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QPushButton" name="CambiarColor">
+      <property name="text">
+       <string>Color</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="Cursiva">
+      <property name="text">
+       <string>Cursiva</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="ColorDeFondo">
+      <property name="text">
+       <string>Color De Fondo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QPushButton" name="Centro">
+      <property name="text">
+       <string>Centrar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="10">
+     <widget class="QSpinBox" name="Size"/>
+    </item>
+    <item row="0" column="6">
+     <widget class="QPushButton" name="Tachado">
+      <property name="text">
+       <string>Tachado</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="11">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>838</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuGuardar_como">
+     <property name="title">
+      <string>Guardar como...</string>
+     </property>
+     <addaction name="ArchivoPDF"/>
+     <addaction name="ArchivoHTML"/>
+     <addaction name="ArchivoODT"/>
+     <addaction name="ArchivoTXT"/>
+    </widget>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionEliminar"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionImprimir"/>
+    <addaction name="actionCerrar"/>
+    <addaction name="menuGuardar_como"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionCrear">
+   <property name="text">
+    <string>Crear</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar </string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionImprimir">
+   <property name="text">
+    <string>Imprimir</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="ArchivoPDF">
+   <property name="text">
+    <string>Archivo .pdf</string>
+   </property>
+  </action>
+  <action name="ArchivoHTML">
+   <property name="text">
+    <string>Archivo .html</string>
+   </property>
+  </action>
+  <action name="ArchivoODT">
+   <property name="text">
+    <string>Archivo .odt</string>
+   </property>
+  </action>
+  <action name="ArchivoTXT">
+   <property name="text">
+    <string>Archivo .txt</string>
+   </property>
+  </action>
+  <action name="ArchivoDOCS">
+   <property name="text">
+    <string>Archivo .docs</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
