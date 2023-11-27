@@ -13,7 +13,7 @@ La interacción del usuario activa eventos que son manejados por las clases en e
 ### Interfaz de Usuario (UI)
 Contiene las clases y archivos relacionados con la interfaz gráfica de usuario. Las ventanas, widgets y elementos visuales se gestionan en este módulo.
 
-## Explicacion de funciones
+## Explicacion de funciones de Edicion
 ### on_Negrita_clicked()
 esta funcion aplica formato bold o negrilla al texto que seleccione el usuario dentro del cuadro de texto de la aplicación la cual no mamneja parametros de entrada pero si realiza proceso de seleccion de texto 
 ### on_Cursiva_clicked()
@@ -24,6 +24,41 @@ Similar a la función de cursiva, activa o desactiva el subrayado en el texto se
 Cambia el estado de tachado del texto seleccionado en el QTextEdit al hacer clic en el botón correspondiente, actualizando el formato y estableciendo el foco en el QTextEdit.
 ### on_Size_valueChanged(int arg1)
 ajusta dinámicamente el tamaño de la fuente en el área de edición de texto (textEdit). Al recibir un nuevo valor (arg1), actualiza el formato de carácter para reflejar el tamaño de fuente seleccionado. Esta función permite a los usuarios cambiar el tamaño de la fuente en tiempo real, mejorando la experiencia de edición.
+### on_Centro_clicked()
+Centra el texto seleccionado en el QTextEdit al hacer clic en el botón correspondiente, ajustando el formato de bloque y estableciendo el foco.
+### on_Izquierda_clicked()
+Alinea a la izquierda el texto seleccionado en el QTextEdit al hacer clic en el botón correspondiente, configurando el formato de bloque y estableciendo el foco.
+### on_Derecha_clicked()
+Alinea a la derecha el texto seleccionado en el QTextEdit al hacer clic en el botón correspondiente, aplicando el formato de bloque y estableciendo el foco.
+### on_fontComboBox_currentFontChanged(const QFont &f)
+Cambia la fuente del texto seleccionado en el QTextEdit según la selección en un QComboBox, actualizando el formato y estableciendo el foco.
+### on_CambiarColor_clicked()
+permite cambiar el color de la fuente del texto seleccionado en el QTextEdit. Al hacer clic en el botón correspondiente, se abre un cuadro de diálogo de selección de color, permitiendo al usuario elegir un nuevo color. Si se selecciona un color válido, la función actualiza el formato de carácter del texto, establece el nuevo color y coloca el foco en el QTextEdit.
+### on_ColorDeFondo_clicked()
+permite cambiar el color de fondo del texto seleccionado en el QTextEdit. Al hacer clic en el botón correspondiente, se abre un cuadro de diálogo de selección de color, lo que permite al usuario elegir un nuevo color de fondo. Si se selecciona un color válido, la función actualiza el formato de carácter del texto, establece el nuevo color de fondo y coloca el foco en el QTextEdit.
+
+## Explicacion de Funciones de Manejo de Archivos (Menu)
+### on_actionAbrir_triggered()
+permite al usuario abrir un archivo de texto(txt), un archivo de hipertexto(HTML) o un archivo OpenDocument(ODT). Al activar esta acción desde la interfaz, se muestra un cuadro de diálogo para seleccionar el archivo deseado. Después de seleccionar y confirmar el archivo, la función carga su contenido en el QTextEdit y actualiza la información del archivo actual, incluyendo la ruta en la interfaz.
+### on_actionGuardar_triggered()
+permite al usuario guardar el contenido actual del editor de texto en un archivo. Se utiliza un cuadro de diálogo para especificar la ubicación y nombre del archivo. La función guarda el texto en el formato correspondiente según la extensión del archivo seleccionado (PDF, HTML, TXT, ODT).
+### on_actionEliminar_triggered()
+elimina el archivo actualmente abierto. Al activar esta acción desde la interfaz, la función intenta abrir el archivo y, si tiene éxito, lo elimina. Si hay algún problema al intentar eliminar el archivo, se muestra una advertencia correspondiente.
+### on_actionCerrar_triggered()
+cierra la ventana de ejecucion del programa 
+### on_actionImprimir_triggered()
+abre un cuadro de diálogo de impresión, permitiendo al usuario seleccionar una impresora y ajustar las configuraciones de impresión. Si se confirma la impresión, la función imprime el contenido del QTextEdit en la impresora seleccionada.
+### on_ArchivoPDF_triggered()
+permite al usuario exportar el contenido actual del editor de texto como un archivo PDF. Al activar esta acción desde la interfaz, se muestra un cuadro de diálogo para especificar la ubicación y el nombre del archivo PDF. La función guarda el texto en formato PDF utilizando la configuración proporcionada.
+### on_ArchivoHTML_triggered()
+permite al usuario exportar el contenido actual del editor de texto como un archivo HTML. Al activar esta acción desde la interfaz, se muestra un cuadro de diálogo para especificar la ubicación y el nombre del archivo HTML. La función guarda el texto en formato HTML utilizando la configuración proporcionada.
+### on_ArchivoTXT_triggered()
+permite al usuario exportar el contenido actual del editor de texto como un archivo de texto (.txt). Al activar esta acción desde la interfaz, se muestra un cuadro de diálogo para especificar la ubicación y el nombre del archivo de texto. La función guarda el texto en formato de texto plano utilizando la configuración proporcionada.
+### on_ArchivoODT_triggered()
+permite al usuario exportar el contenido actual del editor de texto como un archivo ODT (Open Document Text). Al activar esta acción desde la interfaz, se muestra un cuadro de diálogo para especificar la ubicación y el nombre del archivo ODT. La función guarda el texto en formato HTML, adecuado para documentos ODT, utilizando la configuración proporcionada.
+
+## Manual Tecnico
+
 
 
 
