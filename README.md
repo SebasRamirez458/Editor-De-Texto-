@@ -62,7 +62,7 @@ Una vez compilada y teniendo la aplicacion abierta podemos ver un menu en la par
 En el centro de la aplicacion tenemos un cuadro de texto en el cual el usuario podra ingresar  el texto de desee teniendo las opciones de edicion en los botones superiores al cuadro de texto los cuales son: Negrilla, Cursiva, Tachado, Color de Fondo, subrrayado, Color, tamaño, fuente, alinear centro, alinear izquierda y alinear derecha, todas estas funciones o botones de la aplicacion son las que permiten la edicion del texto para aplicar dicha edicion se tiene que seleccionar con el cursor el fragmento de texto al cual se le va a aplicar el cambio o en caso de que quiera que el cambio se aplique para texto posterior solo es necesario dar click en el respectivo boton que desee
 
 # Hecho Por
-UNIVERSIDAD TECNOLOGICA DE PEREIRA\n
+UNIVERSIDAD TECNOLOGICA DE PEREIRA
 Ingenieria en Sistemas y Computacion
 Facultad de Ingenierias
 Programacion II
