@@ -10,3 +10,22 @@ Agrupa y define las clases y funciones que implementan la lógica central de la 
 ### Flujo de Ejecucion
 La ejecución comienza en la clase principal main.cpp, que inicializa la aplicación y carga la interfaz de usuario.
 La interacción del usuario activa eventos que son manejados por las clases en el módulo de lógica de aplicación mainwindow.cpp, provocando actualizaciones en la interfaz y operaciones en el texto. Aquí se manejan las operaciones de edición de texto, el formato, y otras funcionalidades principales.
+### Interfaz de Usuario (UI)
+Contiene las clases y archivos relacionados con la interfaz gráfica de usuario. Las ventanas, widgets y elementos visuales se gestionan en este módulo.
+
+## Explicacion de funciones
+### on_Negrita_clicked()
+esta funcion aplica formato bold o negrilla al texto que seleccione el usuario dentro del cuadro de texto de la aplicación la cual no mamneja parametros de entrada pero si realiza proceso de seleccion de texto 
+### on_Cursiva_clicked()
+Alterna el estado de cursiva en el texto seleccionado dentro del QTextEdit al hacer clic en el botón correspondiente, cambiando el formato y estableciendo el foco en el QTextEdit.
+### on_Subrrayada_clicked()
+Similar a la función de cursiva, activa o desactiva el subrayado en el texto seleccionado del QTextEdit al hacer clic en el botón correspondiente, aplicando el formato y estableciendo el foco.
+### on_Tachado_clicked()
+Cambia el estado de tachado del texto seleccionado en el QTextEdit al hacer clic en el botón correspondiente, actualizando el formato y estableciendo el foco en el QTextEdit.
+### on_Size_valueChanged(int arg1)
+ajusta dinámicamente el tamaño de la fuente en el área de edición de texto (textEdit). Al recibir un nuevo valor (arg1), actualiza el formato de carácter para reflejar el tamaño de fuente seleccionado. Esta función permite a los usuarios cambiar el tamaño de la fuente en tiempo real, mejorando la experiencia de edición.
+
+
+
+
+
